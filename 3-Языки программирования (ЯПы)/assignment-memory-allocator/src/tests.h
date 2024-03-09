@@ -1,0 +1,9 @@
+//
+// Created by Gleb on 26/10/2023.
+//
+
+#ifndef ASSIGNMENT_MEMORY_ALLOCATOR_TESTS_H
+#define ASSIGNMENT_MEMORY_ALLOCATOR_TESTS_H
+
+void execute_tests(void);
+#endif //ASSIGNMENT_MEMORY_ALLOCATOR_TESTS_H
