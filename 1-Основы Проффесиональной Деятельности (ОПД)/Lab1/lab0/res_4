@@ -1,0 +1,39 @@
+75 total
+37 machoke2/mienshao
+19 axew3/monferno
+19 Copy_81/monferno
+-r--r--r-- 1 Gleb 197121   51 Mar 11 16:50 nosepass1
+-r--r--r-- 1 Gleb 197121 94 Mar 11 16:50 parasect
+     1	Ходы Block
+     2	Body Slam Dark Pulse Dynamicpunch Fire Punch Focus Punch Giga Drain
+     3	Gunk Shot Ice Punch Mud-Slap Pain Split Poison Gas Shock Wave Sleep
+     4	Talk Snore Thunderpunch
+     5	Тип диеты
+     6	Omnivore
+     7	Тип диеты
+     8	Omnivore
+     9	weigth=78.3
+    10	height=56.0 atk=13 def=6
+    143 total
+     83 ./machoke2/parasect
+     37 ./machoke2/mienshao
+     23 ./machoke2/carvanha
+      0 ./machoke2/unfezant
+      0 ./machoke2/marshtomp
+-r--r--r-- 1 Gleb 197121  59 Mar 11 16:50 krookodile
+-r--r--r-- 1 Gleb 197121  59 Mar 11 16:50 krookodile
+-rw-r--r-- 1 Gleb 197121  37 Mar 11 16:50 omanyte
+-rw-r--r-- 1 Gleb 197121  37 Mar 11 16:50 omanyte
+-rw-r--r-- 2 Gleb 197121  28 Mar 11 16:50 karrablastvenipede
+     1	Способности Peck Leer Endure Fury Cutter Fury Attack
+     2	Headbutt False Swipe Bug Buzz Slash Take Down Scary Face X-Scissor
+     3	Flail Swords Dance Double-Edge
+     4	Способности Peck Leer Endure Fury Cutter Fury Attack
+     5	Headbutt False Swipe Bug Buzz Slash Take Down Scary Face X-Scissor
+     6	Flail Swords Dance Double-Edge
+     7	Возможности Overland=8 Surface=3
+     8	Burrow=5 Jump=2 Power=3 Intelligence=4 Sprouter=0
+cat: '*t': No such file or directory
+cat: Copy_81/bellsprout: Is a directory
+cat: axew3/bellsprout: Is a directory
+cat: machoke2/unfezant: Is a directory

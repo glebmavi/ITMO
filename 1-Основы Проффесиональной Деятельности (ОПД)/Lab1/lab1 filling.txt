@@ -1,0 +1,33 @@
+karrablast:
+Способности Peck Leer Endure Fury Cutter Fury Attack
+Headbutt False Swipe Bug Buzz Slash Take Down Scary Face X-Scissor
+Flail Swords Dance Double-Edge
+monferno:
+Тип диеты
+Omnivore
+krookodile:
+Способности Landslide Dark Art Intimidate
+Moxie
+porygon:
+Живет Urban
+omanyte:
+weigth=16.5 height=16.0 atk=4
+def=10
+carvanha:
+Живет Freshwater Ocean
+mienshao:
+weigth=78.3
+height=56.0 atk=13 def=6
+parasect:
+Возможности Overland=8 Surface=3
+Burrow=5 Jump=2 Power=3 Intelligence=4 Sprouter=0
+muk8:
+Ходы Block
+Body Slam Dark Pulse Dynamicpunch Fire Punch Focus Punch Giga Drain
+Gunk Shot Ice Punch Mud-Slap Pain Split Poison Gas Shock Wave Sleep
+Talk Snore Thunderpunch
+nosepass1:
+Развитые способности Sand
+Force
+venipede9:
+Тип диеты Herbivore

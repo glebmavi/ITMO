@@ -1,0 +1,115 @@
+# Вход на helios
+ssh helios.cs.ifmo.ru -p 2222 -l s372819
+NrbA)9476
+
+# Часть 1. Создание дерева
+mkdir -p {axew3/{tentacruel,bellsprout,burmy,chikorita},cyndaquil7/{snover,shellos,klink},machoke2/{unfezant,marshtomp}}
+echo "Способности Peck Leer Endure Fury Cutter Fury Attack
+Headbutt False Swipe Bug Buzz Slash Take Down Scary Face X-Scissor
+Flail Swords Dance Double-Edge" 1>>axew3/karrablast
+echo "Тип диеты
+Omnivore" 1>>axew3/monferno
+echo "Способности Landslide Dark Art Intimidate
+Moxie" 1>>cyndaquil7/krookodile
+echo "Живет Urban" 1>>cyndaquil7/porygon
+echo "weigth=16.5 height=16.0 atk=4
+def=10" 1>>cyndaquil7/omanyte
+echo "Живет Freshwater Ocean" 1>>machoke2/carvanha
+echo "weigth=78.3
+height=56.0 atk=13 def=6" 1>>machoke2/mienshao
+echo "Возможности Overland=8 Surface=3
+Burrow=5 Jump=2 Power=3 Intelligence=4 Sprouter=0" 1>>machoke2/parasect
+echo "Ходы Block
+Body Slam Dark Pulse Dynamicpunch Fire Punch Focus Punch Giga Drain
+Gunk Shot Ice Punch Mud-Slap Pain Split Poison Gas Shock Wave Sleep
+Talk Snore Thunderpunch" 1>>muk8
+echo "Развитые способности Sand
+Force" 1>>nosepass1
+echo "Тип диеты Herbivore" 1>>venipede9
+
+# Часть 2. Установка прав
+chmod 755 axew3
+chmod u=wx,g=x,o=w axew3/tentacruel
+chmod 355 axew3/bellsprout
+chmod u=rw,g=w,o= axew3/karrablast
+chmod a+rwx,go-r axew3/burmy
+chmod 512 axew3/chikorita
+chmod 440 axew3/monferno
+chmod 375 cyndaquil7
+chmod 361 cyndaquil7/snover
+chmod 537 cyndaquil7/shellos
+chmod ug=wx,o=rx cyndaquil7/klink
+chmod 444 cyndaquil7/krookodile
+chmod 622 cyndaquil7/porygon
+chmod 600 cyndaquil7/omanyte
+chmod 333 machoke2
+chmod 004 machoke2/carvanha
+chmod a-rwx,go+r machoke2/mienshao
+chmod u=,g=r,o=r machoke2/parasect
+chmod 751 machoke2/unfezant
+chmod 751 machoke2/marshtomp
+chmod a=w,u+r muk8
+chmod a=,o+r nosepass1
+chmod 622 venipede9
+
+# Часть 3. Ссылки и копирование
+# ln -s path from link, path to link
+ln -s axew3 Copy_81
+ln -s nosepass1 machoke2/mienshaonosepass
+ln venipede9 axew3/karrablastvenipede
+cat muk8 > cyndaquil7/porygonmuk
+cat axew3/monferno cyndaquil7/porygon > venipede9_97
+chmod -R u+r cyndaquil7
+cp -R cyndaquil7 axew3/burmy
+chmod 444 cyndaquil7/krookodile
+chmod 335 cyndaquil7/klink
+chmod 361 cyndaquil7/snover
+chmod 375 cyndaquil7
+cp muk8 cyndaquil7/snover
+
+# Часть 4. Поиск и фильтрация
+ls:
+-p, --indicator-style=slash
+append / indicator to directories
+-s, --size
+with -l, print size of each file, in blocks
+-S
+sort by file size
+
+######1
+wc -m */*o *o 2>/tmp/$$| sort -r
+# -1 every file on new line, -R search recursively, ./*o for files in lab0/ ending with o, **/*o for files in lab0/subdirectory/... ending with o.
+
+######2
+ls -lR 2>&1| grep "se" | head -n4 | sort -k9
+# & indicates that what follows and precedes is a file descriptor, and not a filename. Thus, we use 2>&1. Consider >& to be a redirect merger operator.
+
+######3
+cat -n m* */m* | sort
+
+######4
+wc -m ./machoke2/* 2>/dev/null | sort -r
+
+######5
+ls -RlS | grep e$
+ls -Rl | grep e$ | sort -k5r
+# -S of ls is for sorting by size
+# -k5r sort by fifth column in reverse
+
+######6
+cat -n *t */*t 2>&1 | sort
+
+# Часть 5. Удаление
+# idk if needed but: ~$ chmod -R a+w test
+######1
+rm -f nosepass1
+######2
+rm -f cyndaquil7/krookodile
+######3
+rm -f machoke2/mienshaonosepa*
+######4
+rm -f axew3/karrablastvenipe*
+######5
+rm -rf axew3
+######6
+rm -rf cyndaquil7/klink
