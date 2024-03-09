@@ -1,0 +1,1 @@
+Ссылка на репозиторий с лабой: https://github.com/glebmavi/Lab2_Prog_oct_2022
