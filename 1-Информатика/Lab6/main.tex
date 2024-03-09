@@ -1,0 +1,67 @@
+\documentclass[10pt,a4paper,twopage]{article}
+
+%for russian text
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+
+%for links
+\usepackage{hyperref}
+
+%for images
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{wrapfig}
+
+%for margins and page dimensions
+\usepackage[top=2cm, bottom=3cm, left=3cm, right=2.5cm]{geometry}
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancyplain}
+
+%for table
+\usepackage{array}
+
+%for columns
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+%for spacing
+\usepackage{setspace}
+
+%headers and footers [odd]{even}
+\lhead[]{}
+\chead[]{}
+\rhead[]{}
+\lfoot[\textbf{\thepage}]{}
+\cfoot[]{}
+\rfoot[]{\textbf{\thepage}}
+
+\title{Лабораторная работа №7. "Работа с системой компьютерной вёрстки TEX"}
+\author{Маликов Глеб Игоревич}
+
+
+\begin{document}
+\maketitle
+
+\section{Обязательное задание}
+Сверстать страницу, максимально похожую на выбранную страницу из журнала "Квант".\\
+Исходный файл \href{run:./source/Article1.gif}{Страница 1} \href{run:./source/Article1.gif}{Страница 2}\\
+Результат \href{run:./Article.tex}{.tex} \href{run:./Article.pdf}{.pdf}
+
+\section{Необязательное задание №1}
+Сверстать титульный лист\\
+Исходный файл \href{run:./source/Front.gif}{Тилутьный лист}\\
+Результат \href{run:./Front.tex}{Front.tex} \href{run:./Front.pdf}{.pdf}
+
+
+\section{Необязательное задание №2}
+Используя пакет Beamer, необходимо сверстать 5 слайдов презентации с лекций по "Информатике".\\
+Исходный файл \href{run:./source/Lecture.pdf#page=17}{Мера количества информации по Шеннону Слайды 17-21}\\
+Результат\href{run:./Beamer.tex}{.tex} \href{run:./Beamer.pdf}{.pdf}
+
+\clearpage
+\input{./F.tex}
+\clearpage
+\input{./A.tex}
+
+\end{document}
