@@ -1,0 +1,279 @@
+Enter the name of the file to read: sm1
+
+Text from file 'sm1':
+=<//**/{P" aaaaaaaaaaaaaaa
+aa
+=<{P
+=<{P"  cvx ={"
+={P"aaaaaaaa<aaa =<{P""=<{P"=<{P
+должно быть 5 смайликов
+
+The amount of times =<{P appeared:  5
+
+Process finished with exit code 0
+###############
+Enter the name of the file to read: sm2
+
+Text from file 'sm2':
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed felis eget velit aliquet. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Lacus viverra vitae congue eu. Risus at ultrices mi tempus imperdiet nulla malesuada. Condimentum id venenatis a condimentum. Tellus in metus vulputate eu scelerisque felis imperdiet. Massa vitae tortor condimentum lacinia quis vel eros donec. Aliquam eleifend mi in nulla posuere sollicitudin. Faucibus interdum posuere lorem ipsum dolor. Cursus eget nunc scelerisque viverra mauris in aliquam.
+должно быть 0 смайлика
+
+The amount of times =<{P appeared:  0
+
+Process finished with exit code 0
+###############
+Enter the name of the file to read: sm3
+
+Text from file 'sm3':
+'=<{P'"=<{P" =<{P
+
+=
+<
+{
+P
+
+=
+<{
+P
+
+= <{ P
+должно быть 3 смайлика
+
+The amount of times =<{P appeared:  3
+
+Process finished with exit code 0
+###############
+Enter the name of the file to read: sm4
+
+Text from file 'sm4':
+должно быть 0 смайлика
+
+The amount of times =<{P appeared:  0
+
+Process finished with exit code 0
+###############
+Enter the name of the file to read: sm5
+
+Text from file 'sm5':
+==<{P<=<{P{=<{PP
+=<{=<{P
+=<{
+==<{P
+<=<{P
+{
+PPP
+
+должно быть 6 смайликов
+
+The amount of times =<{P appeared:  6
+
+Process finished with exit code 0
+###############
+Enter the name of the file to read: sn1
+
+Text from file 'sn1':
+Студент Вася вспомнил, что на своей лекции Балакшин П.В. упоминал про старшекурсников, которые будут ему помогать: Анищенко А.А. и Машина Е.А.
+imcx xnm
+
+List of surnames: 
+
+Анищенко
+Балакшин
+Машина
+
+Process finished with exit code 0
+###############
+Enter the name of the file to read: sn2
+
+Text from file 'sn2':
+Lorem dolor sed viverra ipsum nunc. Diam vel quam elementum pulvinar etiam non. Integer vitae justo eget magna. Vitae suscipit tellus mauris a. Id velit ut tortor pretium viverra suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Sit amet risus nullam eget felis eget nunc. Volutpat blandit aliquam etiam erat velit scelerisque. Semper viverra nam libero justo laoreet. Hjkpd P.Q. Non enim praesent elementum facilisis leo vel fringilla est. Viverra tellus in hac habitasse platea dictumst. Commodo ullamcorper a lacus vestibulum sed. Rutrum quisque non tellus orci ac auctor augue mauris augue. Accumsan tortor posuere ac ut consequat semper viverra nam libero. Vel facilisis volutpat est velit egestas. Quisque sagittis purus sit amet volutpat consequat. Erat imperdiet sed euismod nisi porta lorem. At volutpat diam ut venenatis tellus in metus.
+
+List of surnames: 
+
+Hjkpd
+
+Process finished with exit code 0
+###############
+Enter the name of the file to read: sn3
+
+Text from file 'sn3':
+Anitschenko A.A.Анищенко А.А.
+Anitschenko A.A.Анищенко А.А.Anitschenko A.A.Анищенко А.А.
+
+List of surnames: 
+
+Anitschenko
+Anitschenko
+Anitschenko
+Анищенко
+Анищенко
+Анищенко
+
+Process finished with exit code 0
+###############
+Enter the name of the file to read: sn4
+
+Text from file 'sn4':
+Машина
+Е.А.Машина Е.А.Машина Е.А.Машина
+Е.А.Машина Е.А.
+
+List of surnames: 
+
+Машина
+Машина
+Машина
+Машина
+Машина
+
+Process finished with exit code 0
+###############
+Enter the name of the file to read: sn5
+
+Text from file 'sn5':
+При составлении библиографии или алфавитных списков лиц инициалы пишутся после фамилии, поскольку поиск рубрики указателя ведется по буквам фамилии: Иванов И. И.
+
+List of surnames: 
+Иванов
+
+Process finished with exit code 0
+###############
+Enter the name of the file to read: pr1
+Enter your group: P000
+
+Text from file 'pr1':
+Петров П.П. P000
+Анищенко А.А. P33113
+Примеров Е.В. P000
+Иванов И.И. P000
+
+['Петров П.П. P000', 'Анищенко А.А. P33113', 'Примеров Е.В. P000', 'Иванов И.И. P000']
+['П', 'А', 'П', 'И']
+['П', 'А', 'Е', 'И']
+['П', 'А', 'В', 'И']
+['P000', 'P33113', 'P000', 'P000']
+Updated list: 
+
+Анищенко А.А. P33113
+Примеров Е.В. P000
+
+Process finished with exit code 0
+###############
+Enter the name of the file to read: pr2
+Enter your group: P000
+
+Text from file 'pr2':
+Petrov P.P. P000
+Анищенко А.А. P33113
+Primerov E.V. P000
+Ivanov I.I. P000
+
+['Petrov P.P. P000', 'Анищенко А.А. P33113', 'Primerov E.V. P000', 'Ivanov I.I. P000']
+['P', 'А', 'P', 'I']
+['P', 'А', 'E', 'I']
+['P', 'А', 'V', 'I']
+['P000', 'P33113', 'P000', 'P000']
+Updated list: 
+
+Анищенко А.А. P33113
+Primerov E.V. P000
+
+Process finished with exit code 0
+###############
+Enter the name of the file to read: pr3
+Enter your group: P000
+
+Text from file 'pr3':
+Петров П.П. P000
+    Иванов И.И. P000
+
+Анищенко А.А. P33113
+
+
+Примеров Е.В. P000
+
+Aванов A.A. P000
+Иванов И.И. P1000
+
+Иванов И.И. P000
+
+Петров-Иванов П.П. P000
+
+['Петров П.П. P000', '    Иванов И.И. P000', 'Анищенко А.А. P33113', 'Примеров Е.В. P000', 'Aванов A.A. P000', 'Иванов И.И. P1000', 'Иванов И.И. P000', 'Петров-Иванов П.П. P000']
+['П', 'И', 'А', 'П', 'A', 'И', 'И', 'П']
+['П', 'И', 'А', 'Е', 'A', 'И', 'И', 'П']
+['П', 'И', 'А', 'В', 'A', 'И', 'И', 'П']
+['P000', 'P000', 'P33113', 'P000', 'P000', 'P1000', 'P000', 'P000']
+Updated list: 
+
+Анищенко А.А. P33113
+Примеров Е.В. P000
+Иванов И.И. P1000
+
+Process finished with exit code 0
+###############
+Enter the name of the file to read: pr4
+Enter your group: P3124
+
+Text from file 'pr4':
+Вайкус Я.М. P3124
+Владимиров В.А. P3124
+Гафурова Ф.Ф. P3124
+Грибич Е.Д. P3124
+Клименко В.И. P3124
+Кобик Н.А. P3124
+Колесников А.И. P3124
+Кононыхин К.Д. P3124
+Крохин Р.О. P3124
+Круглов Е.И. P3124
+Леонов Р.В. P3124
+Маликов Г.И. P3124
+Хвостова И.Л. P3124
+Черневская К.А. P3124
+
+['Вайкус Я.М. P3124', 'Владимиров В.А. P3124', 'Гафурова Ф.Ф. P3124', 'Грибич Е.Д. P3124', 'Клименко В.И. P3124', 'Кобик Н.А. P3124', 'Колесников А.И. P3124', 'Кононыхин К.Д. P3124', 'Крохин Р.О. P3124', 'Круглов Е.И. P3124', 'Леонов Р.В. P3124', 'Маликов Г.И. P3124', 'Хвостова И.Л. P3124', 'Черневская К.А. P3124']
+['В', 'В', 'Г', 'Г', 'К', 'К', 'К', 'К', 'К', 'К', 'Л', 'М', 'Х', 'Ч']
+['Я', 'В', 'Ф', 'Е', 'В', 'Н', 'А', 'К', 'Р', 'Е', 'Р', 'Г', 'И', 'К']
+['М', 'А', 'Ф', 'Д', 'И', 'А', 'И', 'Д', 'О', 'И', 'В', 'И', 'Л', 'А']
+['P3124', 'P3124', 'P3124', 'P3124', 'P3124', 'P3124', 'P3124', 'P3124', 'P3124', 'P3124', 'P3124', 'P3124', 'P3124', 'P3124']
+Updated list: 
+
+Вайкус Я.М. P3124
+Владимиров В.А. P3124
+Гафурова Ф.Ф. P3124
+Грибич Е.Д. P3124
+Клименко В.И. P3124
+Кобик Н.А. P3124
+Колесников А.И. P3124
+Кононыхин К.Д. P3124
+Крохин Р.О. P3124
+Круглов Е.И. P3124
+Леонов Р.В. P3124
+Маликов Г.И. P3124
+Хвостова И.Л. P3124
+Черневская К.А. P3124
+
+Process finished with exit code 0
+###############
+Enter the name of the file to read: pr5
+Enter your group: P3124
+
+Text from file 'pr5':
+Я Я.Я. P000
+В В.В. P3124
+Ф Ф.Ф. P000
+
+['Я Я.Я. P000', 'В В.В. P3124', 'Ф Ф.Ф. P000']
+['Я', 'В', 'Ф']
+['Я', 'В', 'Ф']
+['Я', 'В', 'Ф']
+['P000', 'P3124', 'P000']
+Updated list: 
+
+Я Я.Я. P000
+Ф Ф.Ф. P000
+
+Process finished with exit code 0
+
+
+https://docs.python.org/3/library/re.html
