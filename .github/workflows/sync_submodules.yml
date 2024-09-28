@@ -4,53 +4,33 @@ on:
   push:
     branches:
       - main
-    paths:
-      - "4-Архитектура Компьютера (АК)/csa_lab3/**"
-      - "5-Администрирование СУБД/SUBD/**"
-      - "5-Системы Искусственного Интеллекта (СИИ)/AIS/**"
-      - "5-Анализ Социальных Сетей/Social-Network-Analysis/**"
   workflow_dispatch:    
 
 jobs:
-  update-submodule:
+  Sync-submodules:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main repository
         uses: actions/checkout@v4.2.0
         with:
-          submodules: 'true'
-          fetch-depth: 0
+          submodules: recursive
 
-      - name: Update submodule csa_lab3
+      - name: Configure Git for UTF-8
         run: |
-          cd "4-Архитектура Компьютера (АК)/csa_lab3"
-          git checkout main
-          git pull origin main
-      
-      - name: Update submodule SUBD
-        run: |
-          cd "5-Администрирование СУБД/SUBD"
-          git checkout main
-          git pull origin main
+          git config --global core.quotepath false
+          git config --global i18n.commitencoding utf-8
+          git config --global i18n.logoutputencoding utf-8
 
-      - name: Update submodule AIS
+      - name: Update all submodules
         run: |
-          cd "5-Системы Искусственного Интеллекта (СИИ)/AIS"
-          git checkout main
-          git pull origin main
-          
-      - name: Update submodule Social-Network-Analysis
-        run: |
-          cd "5-Анализ Социальных Сетей/Social-Network-Analysis"
-          git checkout main
-          git pull origin main
+          git submodule foreach --recursive 'git checkout main && git pull origin main'
 
       - name: Commit changes
         run: |
           if [[ $(git status --porcelain) ]]; then
             git config --global user.email "glebmavi@gmail.com"
             git config --global user.name "Gleb Malikov Villegas ^_^"
-            git add "4-Архитектура Компьютера (АК)/csa_lab3" "5-Администрирование СУБД/SUBD" "5-Системы Искусственного Интеллекта (СИИ)/AIS" "5-Анализ Социальных Сетей/Social-Network-Analysis"
+            git add .
             git commit -m "Update submodules to latest commits"
           else
             echo "No changes to commit"
