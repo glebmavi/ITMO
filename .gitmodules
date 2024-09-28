@@ -1,6 +1,3 @@
-[submodule "4-Основы Программной Инженерии (ОПИ)/Lab3/WebLab3"]
-	path = 4-Основы Программной Инженерии (ОПИ)/Lab3/WebLab3
-	url = https://github.com/glebmavi/WebLab3.git
 [submodule "4-Архитектура Компьютера (АК)/csa_lab3"]
 	path = 4-Архитектура Компьютера (АК)/csa_lab3
 	url = https://github.com/glebmavi/csa_lab3
@@ -10,3 +7,6 @@
 [submodule "5-Администрирование СУБД/SUBD"]
 	path = 5-Администрирование СУБД/SUBD
 	url = https://github.com/glebmavi/SUBD
+[submodule "5-Анализ Социальных Сетей/Social-Network-Analysis"]
+	path = 5-Анализ Социальных Сетей/Social-Network-Analysis
+	url = https://github.com/glebmavi/Social-Network-Analysis
