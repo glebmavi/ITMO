@@ -10,16 +10,17 @@ jobs:
   Sync-submodules:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main repository
-        uses: actions/checkout@v4.2.0
-        with:
-          submodules: recursive
-
       - name: Configure Git for UTF-8
         run: |
           git config --global core.quotepath false
           git config --global i18n.commitencoding utf-8
           git config --global i18n.logoutputencoding utf-8
+
+      - name: Checkout main repository
+        uses: actions/checkout@v4.2.0
+        with:
+          submodules: recursive
+          fetch-depth: 0
 
       - name: Update all submodules
         run: |
