@@ -1,0 +1,55 @@
+name: Sync Submodule
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "4-Архитектура Компьютера (АК)/csa_lab3/**"
+      - "5-Администрирование СУБД/SUBD/**"
+      - "5-Системы Искусственного Интеллекта (СИИ)/AIS/**"
+
+jobs:
+  update-submodule:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main repository
+        uses: actions/checkout@v2
+        with:
+          submodules: 'true'
+          fetch-depth: 0
+
+      - name: Update submodule csa_lab3
+        run: |
+          cd "4-Архитектура Компьютера (АК)/csa_lab3"
+          git checkout main
+          git pull origin main
+      
+      - name: Update submodule SUBD
+        run: |
+          cd "5-Администрирование СУБД/SUBD"
+          git checkout main
+          git pull origin main
+
+      - name: Update submodule AIS
+        run: |
+          cd "5-Системы Искусственного Интеллекта (СИИ)/AIS"
+          git checkout main
+          git pull origin main
+
+      - name: Commit changes
+        run: |
+          if [[ $(git status --porcelain) ]]; then
+            git config --global user.email "glebmavi@gmail.com"
+            git config --global user.name "Gleb Malikov Villegas ^_^"
+            git add "4-Архитектура Компьютера (АК)/csa_lab3" "5-Администрирование СУБД/SUBD" "5-Системы Искусственного Интеллекта (СИИ)/AIS"
+            git commit -m "Update submodule to latest commit"
+          else
+            echo "No changes to commit"
+          fi
+
+      - name: Push changes
+        run: |
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
