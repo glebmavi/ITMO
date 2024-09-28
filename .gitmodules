@@ -1,12 +1,16 @@
 [submodule "4-Архитектура Компьютера (АК)/csa_lab3"]
 	path = 4-Архитектура Компьютера (АК)/csa_lab3
 	url = https://github.com/glebmavi/csa_lab3
+	branch = main
 [submodule "5-Системы Искусственного Интеллекта (СИИ)/AIS"]
 	path = 5-Системы Искусственного Интеллекта (СИИ)/AIS
 	url = https://github.com/glebmavi/AIS
+	branch = main
 [submodule "5-Администрирование СУБД/SUBD"]
 	path = 5-Администрирование СУБД/SUBD
 	url = https://github.com/glebmavi/SUBD
+	branch = main
 [submodule "5-Анализ Социальных Сетей/Social-Network-Analysis"]
 	path = 5-Анализ Социальных Сетей/Social-Network-Analysis
 	url = https://github.com/glebmavi/Social-Network-Analysis
+	branch = main
