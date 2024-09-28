@@ -8,6 +8,7 @@ on:
       - "4-Архитектура Компьютера (АК)/csa_lab3/**"
       - "5-Администрирование СУБД/SUBD/**"
       - "5-Системы Искусственного Интеллекта (СИИ)/AIS/**"
+      - "5-Анализ Социальных Сетей/Social-Network-Analysis/**"
 
 jobs:
   update-submodule:
@@ -36,14 +37,20 @@ jobs:
           cd "5-Системы Искусственного Интеллекта (СИИ)/AIS"
           git checkout main
           git pull origin main
+          
+      - name: Update submodule Social-Network-Analysis
+        run: |
+          cd "5-Анализ Социальных Сетей/Social-Network-Analysis"
+          git checkout main
+          git pull origin main
 
       - name: Commit changes
         run: |
           if [[ $(git status --porcelain) ]]; then
             git config --global user.email "glebmavi@gmail.com"
             git config --global user.name "Gleb Malikov Villegas ^_^"
-            git add "4-Архитектура Компьютера (АК)/csa_lab3" "5-Администрирование СУБД/SUBD" "5-Системы Искусственного Интеллекта (СИИ)/AIS"
-            git commit -m "Update submodule to latest commit"
+            git add "4-Архитектура Компьютера (АК)/csa_lab3" "5-Администрирование СУБД/SUBD" "5-Системы Искусственного Интеллекта (СИИ)/AIS" "5-Анализ Социальных Сетей/Social-Network-Analysis"
+            git commit -m "Update submodules to latest commits"
           else
             echo "No changes to commit"
           fi
