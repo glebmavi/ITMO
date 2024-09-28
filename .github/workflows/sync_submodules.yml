@@ -9,6 +9,7 @@ on:
       - "5-Администрирование СУБД/SUBD/**"
       - "5-Системы Искусственного Интеллекта (СИИ)/AIS/**"
       - "5-Анализ Социальных Сетей/Social-Network-Analysis/**"
+  workflow_dispatch:    
 
 jobs:
   update-submodule:
