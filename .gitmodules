@@ -14,3 +14,6 @@
 	path = 5-Анализ Социальных Сетей/Social-Network-Analysis
 	url = https://github.com/glebmavi/Social-Network-Analysis
 	branch = main
+[submodule "5-Операционные Системы (ОС)/Lab 1/OperatingSystems_Lab1"]
+	path = 5-Операционные Системы (ОС)/Lab 1/OperatingSystems_Lab1
+	url = https://github.com/glebmavi/OperatingSystems_Lab1.git
