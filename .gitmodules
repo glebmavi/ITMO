@@ -17,3 +17,6 @@
 [submodule "5-Операционные Системы (ОС)/Lab 1/OperatingSystems_Lab1"]
 	path = 5-Операционные Системы (ОС)/Lab 1/OperatingSystems_Lab1
 	url = https://github.com/glebmavi/OperatingSystems_Lab1.git
+[submodule "5-Операционные Системы (ОС)/Lab 2/OperatingSystems_Lab2"]
+	path = 5-Операционные Системы (ОС)/Lab 2/OperatingSystems_Lab2
+	url = https://github.com/glebmavi/OperatingSystems_Lab2
