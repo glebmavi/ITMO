@@ -23,3 +23,6 @@
 [submodule "5-Операционные Системы (ОС)/Lab 3/OperatingSystems_Lab3"]
 	path = 5-Операционные Системы (ОС)/Lab 3/OperatingSystems_Lab3
 	url = https://github.com/glebmavi/OperatingSystems_Lab3.git
+[submodule "5-Операционные Системы (ОС)/RubezhOS"]
+	path = 5-Операционные Системы (ОС)/RubezhOS
+	url = https://github.com/glebmavi/RubezhOS
