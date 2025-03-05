@@ -26,3 +26,6 @@
 [submodule "5-Операционные Системы (ОС)/RubezhOS"]
 	path = 5-Операционные Системы (ОС)/RubezhOS
 	url = https://github.com/glebmavi/RubezhOS
+[submodule "6-Разработка Компиляторов (КС)/Compilers-Develpment"]
+	path = 6-Разработка Компиляторов (КС)/Compilers-Develpment
+	url = https://github.com/glebmavi/Compilers-Develpment.git
