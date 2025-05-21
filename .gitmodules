@@ -29,3 +29,6 @@
 [submodule "6-Разработка Компиляторов (КС)/Compilers-Develpment"]
 	path = 6-Разработка Компиляторов (КС)/Compilers-Develpment
 	url = https://github.com/glebmavi/Compilers-Develpment.git
+[submodule "6-Разработка Компиляторов (РК)/Compilers-Development"]
+	path = 6-Разработка Компиляторов (РК)/Compilers-Development
+	url = https://github.com/glebmavi/Compilers-Development.git
