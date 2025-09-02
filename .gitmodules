@@ -32,3 +32,10 @@
 [submodule "6-Разработка Компиляторов (РК)/Compilers-Development"]
 	path = 6-Разработка Компиляторов (РК)/Compilers-Development
 	url = https://github.com/glebmavi/Compilers-Development.git
+[submodule "6-Разработка Компиляторов (РК)/Project/compilers-itmo-project"]
+	path = 6-Разработка Компиляторов (РК)/Project/compilers-itmo-project
+	url = https://github.com/niikmynick/compilers-itmo-project
+[submodule "6-Нейротехнологии и аффективные вычисления (Нейро)/Project/emotion-sticker-bot"]
+	path = 6-Нейротехнологии и аффективные вычисления (Нейро)/Project/emotion-sticker-bot
+	url = https://github.com/niikmynick/emotion-sticker-bot.git
+	branch = dev
